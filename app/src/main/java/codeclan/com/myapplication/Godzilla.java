@@ -17,4 +17,8 @@ public class Godzilla extends Kaiju {
     public void attack(Vehicle vehicle){
         super.attack(vehicle);
     }
+
+    public String move() {
+        return super.move() + "See me scurry!";
+    }
 }

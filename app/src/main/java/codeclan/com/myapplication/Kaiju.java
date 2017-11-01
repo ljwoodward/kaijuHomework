@@ -39,4 +39,8 @@ public abstract class Kaiju {
         int damage = health -= this.getAttackValue();
         vehicle.setHealthValue(damage);
     }
+
+    public String move() {
+        return "Moving: ";
+    }
 }

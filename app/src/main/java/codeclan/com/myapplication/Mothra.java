@@ -14,4 +14,8 @@ public class Mothra extends Kaiju {
         return "Sqwaaaaaaaark!";
     }
 
+    public String move() {
+        return super.move() + "Buzzzzzzz!";
+    }
+
 }
