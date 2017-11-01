@@ -26,9 +26,9 @@ public class KaijuTest {
     }
 
     @Test
-    public void canAttack(jeep1) {
+    public void canAttack() {
         godzilla.attack(jeep1);
-        int result = jeep1.healthValue();
+        int result = jeep1.getHealthValue();
         assertEquals(80, result);
     }
 }

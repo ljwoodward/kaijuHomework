@@ -13,4 +13,8 @@ public class Godzilla extends Kaiju {
     public String roar(){
         return "Rooooooaaaaar!";
     }
+
+    public void attack(Vehicle vehicle){
+        super.attack(vehicle);
+    }
 }

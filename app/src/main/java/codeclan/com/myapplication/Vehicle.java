@@ -6,12 +6,24 @@ package codeclan.com.myapplication;
 
 public abstract class Vehicle {
 
-    String type;
-    int healthValue;
+    private String type;
+    private int healthValue;
 
-    public Vehicle(String type, int healthValue) {
+    public Vehicle(int healthValue) {
         this.type = type;
         this.healthValue = healthValue;
     }
 
+    public String getType() {
+        return type;
+    }
+
+    public int getHealthValue() {
+        return healthValue;
+    }
+
+    public int setHealthValue(int healthValue) {
+        this.healthValue = healthValue;
+        return healthValue;
+    }
 }
