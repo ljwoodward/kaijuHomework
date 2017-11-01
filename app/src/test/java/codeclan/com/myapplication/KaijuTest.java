@@ -9,17 +9,26 @@ import static junit.framework.Assert.assertEquals;
  * Created by janemackay on 01/11/2017.
  */
 
-public class GodzillaTest {
+public class KaijuTest {
 
     Godzilla godzilla;
+    Jeep jeep1;
 
     @Before
     public void before() {
         godzilla = new Godzilla("Duncan", 100, 20);
+        jeep1 = new Jeep("Land", 100);
     }
 
     @Test
     public void canRoar() {
         assertEquals("Rooooooaaaaar!", godzilla.roar());
+    }
+
+    @Test
+    public void canAttack(jeep1) {
+        godzilla.attack(jeep1);
+        int result = jeep1.healthValue();
+        assertEquals(80, result);
     }
 }

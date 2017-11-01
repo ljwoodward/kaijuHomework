@@ -6,9 +6,9 @@ package codeclan.com.myapplication;
 
 public abstract class Kaiju {
 
-    String name;
-    int healthValue;
-    int attackValue;
+    private String name;
+    private int healthValue;
+    private int attackValue;
 
     public Kaiju(String name, int healthValue, int attackValue){
         this.name = name;
@@ -17,4 +17,20 @@ public abstract class Kaiju {
     }
 
     abstract String roar();
+
+    public String getName() {
+        return name;
+    }
+
+    public int getHealthValue() {
+        return healthValue;
+    }
+
+    public void setHealthValue(int healthValue) {
+        this.healthValue = healthValue;
+    }
+
+    public int getAttackValue() {
+        return attackValue;
+    }
 }
